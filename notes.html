@@ -1,53 +1,143 @@
-<h1><u>Lesson 1 Key Concepts</u></h1>
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Jeremiah's Notes</title>
+</head>
 
-<h2>WHAT IS THE WEB</h2>
-Major pieces of the web include:<br>
-me, my computer/browser, the internet, and servers<br>
-HTML is a file-type availabe for use on the web...the most prevalent file-type<br><br>
+<body>
 
-<h2>HTML</h2>
-web = collection of HTML docs (Hyper Text Markup Language)<br> HTML = basis for every web page<br>
-hyper-links ("links") is what makes the web...web-like<br>
-HTML = the heart of the web<br>
-It can be: text content, markup, references to other docs, links to other pages<br><br>
+<h1><u>KEY CONCEPTS</u></h1>
 
-<h2>HTML MARKUP</h2>
+<div>
+  <h2>Lesson 1: Basics of HTML</h2>
 
-"markup" is how we edit HTML<br>
-it's made up of and uses "tags"<br>
-tag "content" /tag = element.
-an "element is the entire string "<br><br>
+  <div>
+    <p>
+      <h3>WHAT IS THE WEB</h3>
+    </p>
+    <p>
+      Major pieces of the web include: me, my computer/browser, the internet, and servers. Each component interacts
+      to result in the experience we've become accustomed to: I open a browser, type the URL "google.com" and HTTP
+      sends a request to the appropriate server. That server then responds by delivering the requested HTML file back
+      to the requester.<br>
+    </p>
+  </div>
 
-<b>EXAMPLES OF TAGS</b><br>
-(note that tags use brackets "<>")<br>
-a = anchor (inline tag)<br>
-p = paragraph (block tag)<br>
-div = block tag that allows for styling <br>
-span = inline tag (similar to div, but inline)<br>
-b = bold (inline tag)<br>
-strong = similar to bold<br>
-form = block tag<br><br>
+  <div>
+    <p>
+      <h3>HTML</h3>
+    </p>
+    <p>
+      HTML - Hyper Text Markup Language - is a file-type availabe for use on the web - the most prevalent file-type, in fact. It's the heart-beat of the web.
+      HTML can be text content, markup, references to other docs, or links to other pages.
 
-<h2>LINKING</h2>
-href tag is for linking (means hypertext reference)<br>
-example: a href="www.espn.com"> SPORTS NEWS! /a <br>
-NOTE: don't forget the quotation marks!<br>
-EXAMPLE IN ACTION:<a href="www.espn.com"> SPORTS NEWS! </a><br><br>
+    </p>
+  </div>
 
-<h2>INLINE VS. BLOCK TAGS</h2>
-Inline tags and block tags act differently<br>
-Inline tags: act simply<br>
-Block tags: have height and width. literally form a box around the text/etc<br><br>
+  <div>
+    <p>
+      <h3>HTML MARKUP</h3>
+    </p>
+    <p>
+      "Markup" is how we edit HTML. It's made up of and uses "tags".
+      <xmp> <tag> "content" </tag> </xmp> The above represents an <em>element</em>.
+    </p>
 
+    <p>
+      <em>EXAMPLES OF TAGS</em><br>
 
-<h2>HTML DOCUMENT STRUCTURE</h2>
-begins with !doctype (simply "HTML" in most cases)<br>
-then head closed by /head - includes metadata, css, and page header/title info<br>
-then body closed by /body - all of the main contents of the document/page<br><br>
+      <xmp><a> = anchor (inline tag)</xmp>
+      <xmp><p> = paragraph (block tag)</xmp>
+      <xmp><div> = block tag that allows for styling</xmp>
+      <xmp><span> = inline tag (similar to div, but inline)</xmp>
+      <xmp><b> = bold (inline tag)</xmp>
+      <xmp><strong> = similar to bold</xmp>
+      <xmp><form> = block tag</xmp>
+    </p>
+
+    <p>
+      <em>LINKING</em>
+    </p>
+    <p> "href" tag is for linking (means hypertext reference)<br>
+        example: <xmp><a href="www.espn.com"> SPORTS NEWS! </a></xmp>
+        NOTE: don't forget the quotation marks!<br>
+        EXAMPLE IN ACTION:<a href="www.espn.com"> SPORTS NEWS! </a><br><br>
+        Images are linked using "src" tag. See w3schools.com for more when needed.
+    </p>
+    <p>
+      <em>INLINE VS. BLOCK TAGS</em>
+    </p>
+    <p>
+      Inline tags and block tags act differently<br>
+      Inline tags: act simply<br>
+      Block tags: have height and width. Literally form a box around the text/etc
+    </p>
+
+  </div>
+
+  <div>
+    <p>
+      <h3>HTML DOCUMENT STRUCTURE</h3>
+    </p>
+
+    <p>
+      HTML docs begin with ""!doctype" (simply "HTML" in most cases)<br>
+      then head closed by "/head" - includes metadata, css, and page header/title info<br>
+      then body closed by "/body" - all of the main contents of the document/page
+    </p>
+    <p>
+      Example:<br>
+       <xmp><!DOCTYPE html>
+            <html>
+            <head>
+              <title>Document title</title>
+            </head>
+            <body>
+              <h1>Page title</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </p>
+            </body>
+            </html></xmp>
+    </p>
 
 NOTE: Code in a way that is easily read by others. Document well. Use tabs.<br><br>
 
 
-
-
 Forget something? Google it or go to w3schools.com (lots of great documentation)
+  </div>
+
+  <div>
+    <h2>Lesson 2: HTML AND PAGE STRUCTURE</h2>
+
+  <div>
+    <p>
+      <h3>PAGE STRUCTURE</h3>
+    </p>
+
+    <p>
+      HTML and CSS are both "languages". HTML controls the "structure" of a
+      web page while CSS controls the "style" of a page - how it looks.
+      "DOM" (Document Object Model) is the tree-like structure of a page,
+      as viewed through the 'developer tools' offered within Chrome, for example.
+    </p>
+
+    <p>
+      <h3>BOXIFYING</h3>
+    </p>
+
+    <p>
+      First, it's worth noting that 'boxifying' is a real word - def would've
+      lost that bet, but now I'll win Scrabble.<br><br>
+      Basically, everything we see on a webpage is comprised of a group/series
+      of boxes. Within these boxes the 'magic' is happening - HTML and CSS are
+      working together to generate a visual output we like.<br><br>
+      Developers 'boxify' design copy in order to simplify HTML development
+      and administration.
+    </p>
+    <p>
+      <a href="https://youtu.be/JsH_eSZGhyg">This video is a great explanation.</a>
+
+
+</body>
+</html>
